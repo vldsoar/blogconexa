@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-family: Ubuntu, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: rgb(245, 245, 245);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    background: #fff;
+}
+
+main {
+    min-height: 100vh;
+}
+
+#mainmenu
+{
+    /* background:white url(bg.gif) repeat-x left top; */
+    /* display: flex; */
+}
+
+#mainmenu ul
+{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+#mainmenu ul li
+{
+    display: flex;
+    align-self: center;
+    height: 100%;
+}
+
+#mainmenu ul li a
+{
+	color: rgb(53, 53, 53);
+	background-color: transparent;
+    font-size: 12px;
+    height: 100%;
+    font-size: 1.4em;
+	text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#EFF4FA;
+    text-decoration:none;
+    color: #ff4d37;
+}
+
+/* .container-posts {
+    display: flex;   
+} */
+
+.container-posts > .list-view {
+    padding: 0;
+}
+
+.container-posts > .list-view > .items {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px; 
+}
+
+.posts {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+}   
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;    
+}
+
+.card article {
+    padding: 20px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #ff4d37;
+}
+  
+.card p {
+    flex: 1;
+    line-height: 1.4;
+    margin-top: 1rem;
+    color: #333;
+}
+  
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+  
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.card .btn {
+    width: 100px;
+}
+
+.card small {
+    color: rgb(37, 37, 37);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.card__post {
+    margin: 1rem auto;
+}
+
+.card__post h1 a {
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0;
+    color: #ff4d37;
+}
+
+.card__post h1 a:active {
+    color: #ff4d37;
+} 
+
+.btn {
+    display: block;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    text-decoration: none;
+    /* transition: all .15s; */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    background: #ff4d37;
+    border: 1px solid #ff4d37;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: rgb(255, 77, 55, .8);
+    color: white;
+}
+
+.view-post {
+    /* display: flex; */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.view-post header {
+    text-align: center;
+}
+
+.view-post header > h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.view-post header > h4 {
+    margin: 2rem auto;
+    text-align: left;
+    font-weight: 300;
+}
+.view-post main {
+
+}
+
+.form {
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;    
+}
+
+.form > .row {
+    width: 100%;
+}
+
+.form .buttons {
+    float: right;
+}
+
+.form input, textarea {
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form input[type="checkbox"] {
+    width: auto;
+}
+
+.form select > option {
+    font-size: 1rem;
+}
+
+
+.comments > .comment {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment p {
+    font-size: 1rem;
+}
+
+.comment small {
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.two-column {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    /* flex: 1; */
+    flex-wrap: nowrap;
+}
+
+.container-view-post {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.categories-column {
+    width: 33%;
+    padding: 2em;
+}
+
+@media (min-width: 30em) {
+    .container-posts > .list-view > .items {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;    
+    }
+
+    .item-1 h1 {
+        font-size: 24px;
+    }
+
+    .container-posts > .list-view > .items {
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
