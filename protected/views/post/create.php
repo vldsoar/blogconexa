@@ -8,13 +8,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Post', 'url'=>array('index')),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
+	array('label'=>'Listar Posts', 'url'=>array('index')),
+	array('label'=>'Gerenciar Posts', 'url'=>array('admin')),
 );
 ?>
 
 <div class="container">
-	<h1>Create Post</h1>
+	<h1>Novo Post</h1>
 
 	<?php echo $this->renderPartial('_form', array(
 			'model' => $model,

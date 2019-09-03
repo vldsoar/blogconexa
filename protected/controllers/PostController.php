@@ -51,13 +51,13 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$post = Post::model()->findByPk($id);
+		$post = $this->loadModel($id);
 		$comments = $post->comments(array('order' => 'created_at DESC'));
 
 		$comment = new Comment;
 		$comment->unsetAttributes();
 
-		if (isset($_POST['Comment'])) {
+		if (isset($_POST['Comment']) && !empty($_POST['Comment']['content'])) {
 			$comment->attributes = $_POST['Comment'];
 			$comment->post_id = $post->id;
 
@@ -67,7 +67,6 @@ class PostController extends Controller
 				var_dump($comment);
 			}
 		}
-
 
 		$this->render('view',array(
 			'model' 	=> $post,
@@ -156,7 +155,7 @@ class PostController extends Controller
 		$criteria->with = 'category';
 		$criteria->order = 'created_at DESC';	
 
-		if (isset($_GET['category_id'])) {
+		if (isset($_GET['category_id']) && is_numeric($_GET['category_id'])) {
 			$criteria->condition = 'category_id = '.$_GET['category_id'];
 		}
 
@@ -180,6 +179,7 @@ class PostController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		
 		$model=new Post('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Post']))
@@ -199,7 +199,7 @@ class PostController extends Controller
 	{
 		$model=Post::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Artigo não encontrado.');
 		return $model;
 	}
 

@@ -4,7 +4,15 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<div class="title">
+	<h1>
+		<i><?php echo CHtml::encode(Yii::app()->name); ?></i>
+	</h1>
+	<p>
+		<small>Nós <b>crescemos</b> juntos!</small>
+	</p>
+</div>
+
 
 <div class="container-posts">
 	<?php $this->widget('zii.widgets.CListView', array(

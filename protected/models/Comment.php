@@ -68,7 +68,7 @@ class Comment extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'content' => 'Content',
+			'content' => 'Mensagem',
 			'post_id' => 'Post',
 		);
 	}

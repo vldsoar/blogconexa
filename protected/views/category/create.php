@@ -10,15 +10,18 @@ $this->breadcrumbs=array(
 ?>
 
 <div class="container">
-	<h1>Create Category</h1>
+	<h1>Criar Categoria</h1>
 
 	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
 
-	<?php 
-		$this->menu=array(
-			array('label'=>'List Category', 'url'=>array('index')),
-			array('label'=>'Manage Category', 'url'=>array('admin')),
-		);
-	?>
+	<div class="abc">
+		<?php 
+			$this->menu=array(
+				array('label'=>'Listar Categorias', 'url'=>array('index')),
+				array('label'=>'Gerenciar Categorias', 'url'=>array('admin')),
+			);
+		?>
+	</div>
+	
 </div>
 

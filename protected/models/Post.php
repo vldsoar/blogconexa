@@ -82,10 +82,10 @@ class Post extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'body' => 'Body',
-			'author' => 'Author',
-			'category_id' => 'Category',
+			'title' => 'Título',
+			'body' => 'Texto',
+			'author' => 'Autor',
+			'category_id' => 'Categoria',
 		);
 	}
 

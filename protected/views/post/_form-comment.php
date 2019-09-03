@@ -7,12 +7,16 @@
 
         <div class="row">
             <?php echo $form->labelEx($model, 'content'); ?>
-            <?php echo $form->textField($model, 'content', array('size' => 60, 'maxlength'=>255 )); ?>
+            <?php echo $form->textField($model, 'content', array(
+                'size' => 60,
+                'maxlength' => 255 ,
+                'required' => true,
+            )); ?>
             <?php echo $form->error($model, 'content'); ?>
         </div>
 
         <div class="row buttons">
-            <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array(
+            <?php echo CHtml::submitButton($model->isNewRecord ? 'Enviar' : 'Salvar', array(
                 'class' => 'btn btn-primary',
             )); ?>
         </div>

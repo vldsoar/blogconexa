@@ -287,9 +287,56 @@ main {
     max-width: 1000px;
 }
 
-.categories-column {
+.categories-col {
     width: 33%;
     padding: 2em;
+}
+
+.categories-col ul {
+    list-style: none;
+    padding: .5rem 1rem;
+    background: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.categories-col ul > li {
+    line-height: 1.8;
+    width: 100%;
+}
+
+.categories-col ul > .active a {
+    color: #333 !important;
+    font-weight: bold;
+}
+.categories-col ul > li a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem 0;
+    margin: 1em auto;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    color: #ff4d37;
+}
+
+.categories-col ul > li a:hover {
+    font-weight: bold;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title h1 {
+    line-height: .8;
+}
+
+.last {
+    float: right !important;
 }
 
 @media (min-width: 30em) {

@@ -65,7 +65,7 @@ class Category extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'name' => 'Nome',
 		);
 	}
 

@@ -6,7 +6,11 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About</h1>
+<h1>Sobre Nós</h1>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<div class="container">
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id facilis, quaerat cum consequatur, cupiditate rerum labore magni itaque blanditiis sapiente laboriosam sint aliquid quasi consectetur similique commodi fugiat quia eaque.
+	</p>
+</div>
+

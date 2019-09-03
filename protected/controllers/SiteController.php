@@ -33,10 +33,7 @@ class SiteController extends Controller
 			'criteria' => array(
 				'with' 	=> 'category',
 				'order' => 'created_at DESC',
-				'limit' => 5,
-			),
-			'pagination' => array(
-				'pageSize'=> 5,
+				'limit' => 8,
 			),
 		));
 
